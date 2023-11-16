@@ -1,7 +1,11 @@
-$firstColor: #121212;
-$secondColor: #121212;
-$thidColor: #121212;
+@import
+
+$firstColor: #00204a;
+$secondColor: #005792;
+$thirdColor: #00bbf0;
 
 body, html {
- background: $firstColor;
+ background: $secondColor;
+
+ font-family: ;
 }
