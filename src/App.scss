@@ -4,9 +4,44 @@ $firstColor: #00204a;
 $secondColor: #005792;
 $thirdColor: #00bbf0;
 
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
 body, html {
- background: $secondColor;
+ 
 
  font-family: Poppins, century gothic;
  color: white;
+}
+
+#root {
+  background: $secondColor;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 3%;
+}
+.list {
+  background: $thirdColor;
+
+  height: 100%;
+  width: 20%;
+}
+.content {
+  background: $firstColor;
+
+  height: 100%;
+  width: 80%;
 }
