@@ -1,4 +1,4 @@
-@import
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 $firstColor: #00204a;
 $secondColor: #005792;
@@ -7,5 +7,6 @@ $thirdColor: #00bbf0;
 body, html {
  background: $secondColor;
 
- font-family: ;
+ font-family: Poppins, century gothic;
+ color: white;
 }
