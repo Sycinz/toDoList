@@ -1,17 +1,48 @@
+import { useState } from 'react'
+import ListContent from './ListContent'
+import MainContent from './MainContent'
 import './App.scss'
 
 function App() {
+  const [toDo, setToDo] = useState([ {
+    title: 'New task',
+    content: 'Change the text by typing in!'
+  },{
+    title: 'New task',
+    content: 'Change the text by typing in!'
+  },{
+    title: 'New task',
+    content: 'Change the text by typing in!'
+  },{
+    title: 'New task',
+    content: 'Change the text by typing in!'
+  },{
+    title: 'New task',
+    content: 'Change the text by typing in!'
+  },{
+    title: 'New task',
+    content: 'Change the text by typing in!'
+  },{
+    title: 'New task',
+    content: 'Change the text by typing in!'
+  },{
+    title: 'New task',
+    content: 'Change the text by typing in!'
+  },{
+    title: 'New task',
+    content: 'Change the text by typing in!'
+  },{
+    title: 'New task',
+    content: 'Change the text by typing in!'
+  },
+ ])
 
   return (
   <main>
     {/* ToDo list on the left side */}
-    <section className='list'>
-
-    </section>
+    <ListContent toDo={toDo} setToDo={setToDo} />
     {/* ToDo list of content */}
-    <section className='content'>
-
-    </section>
+    <MainContent toDo={toDo} setToDo={setToDo} />
   </main>
   )
 }
