@@ -1,48 +1,29 @@
 import { useState } from 'react'
-import ListContent from './ListContent'
-import MainContent from './MainContent'
+import ToDoAdding from './ToDoAdding'
+import ToDoList from './ToDoList'
 import './App.scss'
 
 function App() {
   const [toDo, setToDo] = useState([ {
-    title: 'New task',
-    content: 'Change the text by typing in!'
-  },{
-    title: 'New task',
-    content: 'Change the text by typing in!'
-  },{
-    title: 'New task',
-    content: 'Change the text by typing in!'
-  },{
-    title: 'New task',
-    content: 'Change the text by typing in!'
-  },{
-    title: 'New task',
-    content: 'Change the text by typing in!'
-  },{
-    title: 'New task',
-    content: 'Change the text by typing in!'
-  },{
-    title: 'New task',
-    content: 'Change the text by typing in!'
-  },{
-    title: 'New task',
-    content: 'Change the text by typing in!'
-  },{
-    title: 'New task',
-    content: 'Change the text by typing in!'
-  },{
-    title: 'New task',
-    content: 'Change the text by typing in!'
+    title: '',
+    content: ''
   },
  ])
+// Function that handles input value change (not title yet)
+ const handleValue = (event) => {
+  const {name, value} = event.target
+
+  setToDo(prevToDo => ({
+    ...prevToDo,
+    content: value
+  }))
+ }
 
   return (
   <main>
-    {/* ToDo list on the left side */}
-    <ListContent toDo={toDo} setToDo={setToDo} />
-    {/* ToDo list of content */}
-    <MainContent toDo={toDo} setToDo={setToDo} />
+    {/* ToDo adding to content list */}
+    <ToDoAdding handleValue={handleValue} setToDo={setToDo} />
+    <ToDoList />
   </main>
   )
 }
