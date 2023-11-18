@@ -5,13 +5,13 @@ import './App.scss'
 
 function App() {
   const [toDo, setToDo] = useState([ {
-    title: '',
-    content: ''
+    content: 'Masno kurwa ni'
   },
  ])
+//  currentValue is current <ToDoAdding / >'s input value. 
  const [currentValue, setCurrentValue] = useState('New note! Change it by typing in')
 
-// Function that handles input value change (not title yet)
+// Function that handles input value change and saves it in the currentValue state
  const handleValue = (event) => {
   const {name, value} = event.target
 

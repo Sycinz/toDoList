@@ -3,7 +3,7 @@ const ToDoList = (props) => {
 
     return (
     <section className="list">
-        h
+        { toDo.map(v => (v.content)) }
     </section>
     )
 }
