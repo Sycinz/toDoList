@@ -9,21 +9,26 @@ function App() {
     content: ''
   },
  ])
+ const [currentValue, setCurrentValue] = useState('New note! Change it by typing in')
+
 // Function that handles input value change (not title yet)
  const handleValue = (event) => {
   const {name, value} = event.target
 
-  setToDo(prevToDo => ({
-    ...prevToDo,
-    content: value
-  }))
- }
+   if (name === 'content') setCurrentValue(prevValue => (value))  
+}
 
   return (
   <main>
     {/* ToDo adding to content list */}
-    <ToDoAdding handleValue={handleValue} setToDo={setToDo} />
-    <ToDoList />
+    <ToDoAdding 
+      handleValue={handleValue} 
+      setToDo={setToDo} 
+      currentValue={currentValue} 
+      setCurrentValue={setCurrentValue} 
+      />
+
+      <ToDoList toDo={toDo} setToDo={setToDo}/>
   </main>
   )
 }

@@ -1,15 +1,13 @@
 import {useState} from 'react'
 
 const ToDoAdding = (props) => {
-    const [currentValue, setCurrentValue] = useState('Change the note by typing in!')
-
-
-
+    const {handleValue, setToDo, setCurrentValue, currentValue} = props
+    
     return (
         <section className="content">
             <div className="content_title">ToDo List</div>
             <div className="content_container">
-                <input className='content_radio' type="radio" /><input name="content" className="content_input" value={currentValue} key={currentValue.id} />
+                <button className='content_add'>+</button><input name="content" className="content_input" onChange={handleValue} value={currentValue} key={0} />
             </div>
         </section>
         )
