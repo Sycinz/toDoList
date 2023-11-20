@@ -1,10 +1,9 @@
 const ToDoAdding = (props) => {
-    const {handleValue, setToDo, toDo, currentValue} = props
+    const {handleValue, setToDo, currentValue} = props
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        setToDo(prevToDo => ([...prevToDo, {content: currentValue}]))
-        console.log(currentValue)
+        setToDo(prevToDo => ([...prevToDo, currentValue]))
     }
     
     return (

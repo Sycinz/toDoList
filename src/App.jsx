@@ -4,10 +4,7 @@ import ToDoList from './ToDoList'
 import './App.scss'
 
 function App() {
-  const [toDo, setToDo] = useState([ {
-    content: ''
-  },
- ])
+  const [toDo, setToDo] = useState([''])
 //  currentValue is current <ToDoAdding / >'s input value. 
  const [currentValue, setCurrentValue] = useState('New note! Change it by typing in')
 
@@ -15,7 +12,7 @@ function App() {
  const handleValue = (event) => {
   const {name, value} = event.target
 
-   if (name === 'content') setCurrentValue(prevValue => (value))  
+  setCurrentValue(prevValue => (value))  
 }
 
   return (
