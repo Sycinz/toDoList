@@ -5,7 +5,7 @@ import './App.scss'
 
 function App() {
   const [toDo, setToDo] = useState([ {
-    content: 'Masno kurwa ni'
+    content: 'Easy peasy, lemon squezie'
   },
  ])
 //  currentValue is current <ToDoAdding / >'s input value. 
