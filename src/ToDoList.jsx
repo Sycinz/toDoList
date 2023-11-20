@@ -3,7 +3,9 @@ const ToDoList = (props) => {
 
     return (
     <section className="list">
-        { toDo.map(v => (v.content)) }
+        <div className="list_container">
+        { toDo.map(v => (<div className="list_item">{v.content}</div>)) }
+        </div>
     </section>
     )
 }
