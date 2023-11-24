@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import ToDoAdding from './ToDoAdding'
-import ToDoList from './ToDoList'
+import ToDoAdding from '../components/ToDoAdding'
+import ToDoList from '../components/ToDoList'
 import './App.scss'
 
 function App() {

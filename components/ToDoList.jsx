@@ -3,9 +3,9 @@ const ToDoList = (props) => {
 
     return (
     <section className="list">
-        <div className="list_container">
-        { toDo.map(v => (<div className="list_item">{v}</div>)) }
-        </div>
+        <ul className="list_container">
+        { toDo.map((v, i) => (v !== "" ? <li key={i} className="list_item">{v}</li> : null)) }
+        </ul>
     </section>
     )
 }
