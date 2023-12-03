@@ -3,6 +3,9 @@
 $firstColor: #00204a;
 $secondColor: #005792;
 $thirdColor: #00bbf0;
+$fourthColor: #fdb44b;
+
+
 
 *, *::before, *::after {
   padding: 0;
@@ -12,9 +15,8 @@ $thirdColor: #00bbf0;
 }
 
 body, html {
- 
-
  font-family: Poppins, century gothic;
+ font-size: 1.2em;
  color: white;
 }
 
@@ -45,3 +47,13 @@ main {
   height: 100%;
   width: 80%;
 }
+
+.container {
+  padding: 0 0 0 20%;
+}
+
+.container li {
+  margin: 12% 0 0 0;
+  border: 5px solid black;
+}
+
