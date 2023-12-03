@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import ToDoAdding from '../components/ToDoAdding'
-import ToDoList from '../components/ToDoList'
+import ToDoAdding from './components/ToDoAdding'
+import ToDoList from './components/ToDoList'
 import './App.scss'
 
 function App() {
@@ -12,9 +12,8 @@ function App() {
  const handleValue = (event) => {
   const {name, value} = event.target
 
-  setCurrentValue(prevValue => (value))  
-}
-
+  setCurrentValue(prevValue => (value))
+ }
   return (
   <main>
     {/* ToDo adding to content list */}
